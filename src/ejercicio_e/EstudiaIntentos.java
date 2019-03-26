@@ -10,6 +10,7 @@ package ejercicio_e;
  * @author munchi
  */
 public class EstudiaIntentos {
+    
     public static String[] palabras={"camion","mentira"};
     
     public static boolean esCorrecta;
