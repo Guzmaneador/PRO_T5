@@ -11,11 +11,14 @@ package ejercicio_e;
  */
 public class EstudiaIntentos {
     
-    public static String[] palabras={"camion","mentira"};
+    ficheroPalabras ficherazo = new ficheroPalabras();
+        
+    public  String[] palabras={"camion","mentira"};
     
     public static boolean esCorrecta;
     
-    public static String obtenerPalabra(){
+    public String obtenerPalabra(){
+        palabras=ficherazo.pedirFichero();
        return palabras [(int) (Math.random() *palabras.length)];    
     }
     
